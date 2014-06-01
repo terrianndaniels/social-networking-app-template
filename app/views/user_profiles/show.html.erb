@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-success">
+	<div class="panel-heading">
+	<p class="panel-title all-caps">
+	
+	<%= @user_profile.name %>
+	<p>
+</div>
+  <strong>Name:</strong>
+  <%= @user_profile.name %>
+</p>
+<p>
+  <strong>Starsigin:</strong>
+  <%= @user_profile.starsigin %>
+</p>
+
+<p>
+  <strong>Hobbies:</strong>
+  <%= @user_profile.hobbies %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user_profile.age %>
+</p>
+<% if user_signed_in? %>
+<% if @user_profile == current_user.user_profile %>
+  <%= link_to 'Edit me baby', edit_user_profile_path(@user_profile), 
+  	class: 'btn btn-info' %>
+  <% end %>
+<% end %>
+
+</div>
+</div>

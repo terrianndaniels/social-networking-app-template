@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starsigin: MyString
+  hobbies: MyText
+  age: 1
+  name: MyString
+
+two:
+  starsigin: MyString
+  hobbies: MyText
+  age: 1
+  name: MyString
